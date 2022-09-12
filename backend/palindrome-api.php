@@ -3,8 +3,11 @@
     $reverseString = strrev($myString);
     
     if ($myString == $reverseString) {
-        echo "Is a Palindrome";
+        $result = "Is a Palindrome";
     } else {
-        echo "Not a Palindrome";
+        $result = "Not a Palindrome";
     };
+
+    $sendObject = json_encode($result);
+    echo $sendObject;
 ?>
